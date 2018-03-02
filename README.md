@@ -31,10 +31,9 @@ within the `kvikler` directory:
 > pip install -e .
 ```
 
-This will work on most systems. On Windows it is assumed that a somewhat complete OSGeo4W
-installation is already available. Run the installation from the OSGeo4W shell.
+This will work on most systems.
 
-Before using *kvikler* as configuration file is needed. It needs to be placed in your `HOME`
+Before using *kvikler* a configuration file is needed. It needs to be placed in your `HOME`
 directory. On Windows that is typically `C:\Users\<yourusername>`. The configuration file
 should be called `kvikler_settings.json`. Below is an example configuration file.
 
@@ -50,6 +49,20 @@ should be called `kvikler_settings.json`. Below is an example configuration file
     }
 }
 ```
+
+
+### Windows specifics
+It is assumed that you run *kvikler* from within the OSGeo4W environment. It is assumed that
+a somewhat complete OSGeo4W installation is already available. Run the installation from the
+OSGeo4W shell. On Windows you might need [Microsoft Visual C++ 9.0](http://aka.ms/vcpython27)
+before some of the dependencies can be installed with `pip`. Dependencies that fail to install
+can often be installed separately by downloading the problematic package from
+[Gohlke's](https://www.lfd.uci.edu/~gohlke/pythonlibs/) and running
+
+```
+pip install <path_to_python_package>
+```
+
 
 ## Testing
 

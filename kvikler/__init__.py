@@ -41,11 +41,12 @@ if conf_db.has_key('port'):
 else:
     port = 5432
 
-con_str = 'postgresql://{usr}:{pswd}@{host}:{port}'.format(
+con_str = 'postgresql://{usr}:{pswd}@{host}:{port}/{db}'.format(
     usr=username,
     pswd=password,
     host=hostname,
     port=port,
+    db=database,
 )
 
 conf_db = None

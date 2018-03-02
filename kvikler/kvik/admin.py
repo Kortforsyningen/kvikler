@@ -31,6 +31,8 @@ def initdb(verbose):
     create_schema(engine)
     engine.dispose()
 
+    print(kvikler.con_str)
+
 @admin.command()
 @click.option('-v', '--verbose', is_flag=True, help='Enables verbose mode')
 def dropdb(verbose):
@@ -39,7 +41,6 @@ def dropdb(verbose):
     '''
     if verbose:
         click.secho('Creating database', fg='red', bold=True)
-
 
     engine = sqlalchemy.create_engine(kvikler.con_str, echo=verbose)
     engine.connect()
