@@ -42,6 +42,7 @@ setup(
 
         [kvikler.kvik_commands]
         admin=kvikler.kvik.admin:admin
+        kmsfile=kvikler.kvik.kmsfile:kmsfile
     ''',
     keywords='levelling database geodesy',
     url='https://github.com/Kortforsyningen/kvikler',
