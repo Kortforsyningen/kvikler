@@ -43,6 +43,7 @@ setup(
         [kvikler.kvik_commands]
         admin=kvikler.kvik.admin:admin
         kmsfile=kvikler.kvik.kmsfile:kmsfile
+        gama=kvikler.kvik.gama:gama
     ''',
     keywords='levelling database geodesy',
     url='https://github.com/Kortforsyningen/kvikler',
@@ -56,6 +57,5 @@ setup(
         'click',
         'click_plugins',
         'sqlalchemy',
-        'geoalchemy2',
     ],
 )
